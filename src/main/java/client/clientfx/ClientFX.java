@@ -190,11 +190,11 @@ public class ClientFX extends Application {
         HBox root = new HBox();
         Scene scene = new Scene(root, 530, 400);
 
-        // LEFT SIDE
+        // titre à gauche 
         Text titre_left = new Text("Formulaire d'inscription");
         titre_left.setTextAlignment(TextAlignment.CENTER);
 
-        // TABLE
+        // Donner le tableau
         TableColumn<Course, String> codeColumn = new TableColumn<>("Code");
         TableColumn<Course, String> nomColumn = new TableColumn<>("Cours");
 
@@ -215,7 +215,7 @@ public class ClientFX extends Application {
         tableView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
         tableView.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
 
-        // DROPDOWN
+        // Donner la session
         ComboBox<String> choixSession = new ComboBox<>();
         choixSession.getItems().addAll("Automne", "Hiver", "Ete");
         choixSession.setValue("Automne");
